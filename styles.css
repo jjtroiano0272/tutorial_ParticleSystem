@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+h1 {
+    font-size: 5rem;
+    width: 50vw;
+    line-height: 97%;
+    text-align: right;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    width: 40vw;
+}
+
+h1, p {
+    flex-basis: 0;
+    flex-grow: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.my-container {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    
+    /* Rest is standard Bootstrap */
+    width: 100%;
+    /* padding-right: var(--bs-gutter-x, 0.75rem); */
+    /* padding-left: var(--bs-gutter-x, 0.75rem); */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    /* --bs-gutter-x: 1.5rem; */
+    /* --bs-gutter-y: 0; */
+}
+
+.my-content {
+    display: flex;
+    gap: 5em;
+    width: 100%;
+    padding-top: 3em;
+    position: relative;
+}
+    
+.my-content:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid white; /* Horizontal line */
+    transform: scaleX(0.75); /* Change the length of the line */
+    /* clip-path: polygon(100% 100%, 100% 0, 100% 0, 0 0); */
+}

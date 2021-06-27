@@ -1,0 +1,22 @@
+{
+  "name": "tutorial_particlesystem",
+  "version": "0.0.1",
+  "description": "tutorial from YouTube",
+  "main": "index.html",
+  "dependencies": {
+    "gsap": "^3.7.0",
+    "three": "^0.129.0"
+  },
+  "devDependencies": {
+    "vite": "^2.3.8"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "config": "vite --config my-config.js",
+    "prod": "npm run build && npm run serve"
+  },
+  "author": "Jonathan J. Troiano",
+  "license": "MIT"
+}
